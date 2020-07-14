@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.1 (Python 3.8.3 on win32)" generated="20200624 18:35:47.299" rpa="false">
+<suite id="s1" name="Test" source="E:\python-xiaojiayu\WIFI\sel\test.txt">
+<kw name="Suite setup" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>s setup</arg>
+</arguments>
+<msg timestamp="20200624 18:35:47.559" level="INFO">s setup</msg>
+<status status="PASS" starttime="20200624 18:35:47.559" endtime="20200624 18:35:47.559"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.558" endtime="20200624 18:35:47.559"></status>
+</kw>
+<test id="s1-t1" name="test01">
+<kw name="Open App" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Opening Apps</arg>
+</arguments>
+<msg timestamp="20200624 18:35:47.561" level="INFO">Opening Apps</msg>
+<status status="PASS" starttime="20200624 18:35:47.561" endtime="20200624 18:35:47.561"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.560" endtime="20200624 18:35:47.561"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${name}</arg>
+</arguments>
+<status status="PASS" starttime="20200624 18:35:47.562" endtime="20200624 18:35:47.562"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${fruit}</arg>
+</arguments>
+<status status="PASS" starttime="20200624 18:35:47.562" endtime="20200624 18:35:47.562"></status>
+</kw>
+<kw name="Close App" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Closing Apps</arg>
+</arguments>
+<msg timestamp="20200624 18:35:47.563" level="INFO">Closing Apps</msg>
+<status status="PASS" starttime="20200624 18:35:47.563" endtime="20200624 18:35:47.563"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.563" endtime="20200624 18:35:47.563"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.559" endtime="20200624 18:35:47.563" critical="yes"></status>
+</test>
+<test id="s1-t2" name="test02">
+<kw name="Open App" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Opening Apps</arg>
+</arguments>
+<msg timestamp="20200624 18:35:47.565" level="INFO">Opening Apps</msg>
+<status status="PASS" starttime="20200624 18:35:47.565" endtime="20200624 18:35:47.565"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.564" endtime="20200624 18:35:47.565"></status>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<arguments>
+<arg>John</arg>
+</arguments>
+<assign>
+<var>${name01}</var>
+</assign>
+<msg timestamp="20200624 18:35:47.565" level="INFO">${name01} = John</msg>
+<status status="PASS" starttime="20200624 18:35:47.565" endtime="20200624 18:35:47.565"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${name01}</arg>
+</arguments>
+<status status="PASS" starttime="20200624 18:35:47.565" endtime="20200624 18:35:47.566"></status>
+</kw>
+<kw name="Close App" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Closing Apps</arg>
+</arguments>
+<msg timestamp="20200624 18:35:47.567" level="INFO">Closing Apps</msg>
+<status status="PASS" starttime="20200624 18:35:47.567" endtime="20200624 18:35:47.567"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.566" endtime="20200624 18:35:47.567"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.564" endtime="20200624 18:35:47.567" critical="yes"></status>
+</test>
+<test id="s1-t3" name="tc03">
+<kw name="Open App" type="setup">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Opening Apps</arg>
+</arguments>
+<msg timestamp="20200624 18:35:47.569" level="INFO">Opening Apps</msg>
+<status status="PASS" starttime="20200624 18:35:47.569" endtime="20200624 18:35:47.569"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.569" endtime="20200624 18:35:47.569"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${fruit}[2]</arg>
+</arguments>
+<status status="PASS" starttime="20200624 18:35:47.570" endtime="20200624 18:35:47.570"></status>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<doc>Logs the given message to the console.</doc>
+<arguments>
+<arg>${USER 1.name}</arg>
+</arguments>
+<status status="PASS" starttime="20200624 18:35:47.570" endtime="20200624 18:35:47.570"></status>
+</kw>
+<kw name="Close App" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Closing Apps</arg>
+</arguments>
+<msg timestamp="20200624 18:35:47.571" level="INFO">Closing Apps</msg>
+<status status="PASS" starttime="20200624 18:35:47.571" endtime="20200624 18:35:47.571"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.571" endtime="20200624 18:35:47.571"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.568" endtime="20200624 18:35:47.571" critical="yes"></status>
+</test>
+<kw name="Suite teardown" type="teardown">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>s teardown</arg>
+</arguments>
+<msg timestamp="20200624 18:35:47.572" level="INFO">s teardown</msg>
+<status status="PASS" starttime="20200624 18:35:47.572" endtime="20200624 18:35:47.572"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.572" endtime="20200624 18:35:47.573"></status>
+</kw>
+<status status="PASS" starttime="20200624 18:35:47.301" endtime="20200624 18:35:47.573"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0">Critical Tests</stat>
+<stat pass="3" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

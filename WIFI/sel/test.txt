@@ -1,0 +1,38 @@
+*** Settings ***
+
+Library   SeleniumLibrary
+Library   OperatingSystem
+test setup  Open App
+test teardown  Close App
+suite setup  Suite setup
+suite teardown  suite teardown
+*** Test Cases ***
+
+test01
+    log to console  ${name}
+    log to console  ${fruit}
+
+test02
+    ${name01}=  set variable    John
+    log to console  ${name01}
+tc03
+    log to console  ${fruit}[2]
+    log to console  ${USER 1.name}
+*** Keywords ***
+eywords ***
+Open App
+    log  Opening Apps
+Close App
+    log  Closing Apps
+Suite setup
+    log  s setup
+Suite teardown
+    log  s teardown
+
+*** Variables ***
+${name}=  Cabines
+@{fruit}=  Apple  Banana  Pear
+&{USER 1}       name=Matti    address=xxx         phone=123
+
+## suite setup->test setup -> tc01 -> test teardown ->
+## test setup -> tc2 -> test teardown ->suite teardown
